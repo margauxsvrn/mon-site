@@ -1,0 +1,157 @@
+/* Mise en forme de base */
+body {
+    font-family: 'Zen Antique Soft', serif;
+}
+
+/* Import de la police téléchargée */
+@font-face {
+    font-family: 'sundine' ;
+    src: url(../fonts/sundine.ttf) format('truetype');
+}
+
+/* Barre de navigation */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    border: 1px solid rgba(92, 92, 92, 0.18);
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: sticky;
+    background-color: white;
+    top: 0px;
+}
+
+/* Responsive */
+@media all and (max-device-width: 880px)
+{
+
+   nav {
+    width: 100%;
+    background-color: blueviolet;
+    margin: 0;
+   }
+
+}
+
+.menu-element {
+    margin-top: 20px;
+}
+
+.menu-element a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu-element a:hover {
+    color: rgb(95, 160, 165);
+    transition: 500ms;
+}
+
+/* Image */
+
+img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+h1:hover {
+    color: blueviolet;
+}
+
+.edit {
+    color:brown;
+    font-weight: bold;
+}
+
+
+/* Section Principale */
+
+main {
+    width: 90%;
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+}
+
+.section h1 {
+    font-size: 40px;
+    color: #f9faf8;
+
+}
+
+.section {
+    padding: 40px 70px 40px 70px;
+    text-align: center;
+}
+
+/* Section Contact */
+
+#contact {
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 50%;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+#contact button {
+    border: 1px solid #829fdb;
+    color: #f9faf8;
+    background-color: #829fdb;
+    border-radius: 40px;
+    padding: 10px 30px 10px 30px;
+    margin-top: 20px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+/* Formulaire */
+
+form input {
+    border: 1px solid #575555;
+    border-radius: 50px;
+    height: 30px;
+    width: 200px;
+    padding: 20px;
+}
+
+input::placeholder{
+    color: #829fdb;
+}
+
+a {
+    color: black;
+}
+
+.btn-submit {
+    border: none;
+    border-radius: 50px;
+   background-color: rgb(95, 160, 165);
+    width: 90px;
+    margin: 20px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
